@@ -1,0 +1,11 @@
+(define (max-of-three a b c)
+  (if (and (> a b) (> a c)) a (max-of-three b c a))
+)
+
+(display (max-of-three 1 3 5))
+(display (max-of-three 1 5 3))
+(display (max-of-three 5 3 1))
+(display (max-of-three 5 1 3))
+(display (max-of-three 3 1 5))
+(display (max-of-three 3 5 1))
+(display "\n")
