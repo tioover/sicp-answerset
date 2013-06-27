@@ -3,4 +3,6 @@ SICP-AnswerSet
 
 My solutions to the exercises in SICP.
 
-*WTFPL*
+[My Reading Note](http://eggfan.org/modern-magic)
+
+under **WTFPL**
