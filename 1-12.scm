@@ -1,4 +1,4 @@
-#ang racket
+#lang racket
 
 (define (pascal level n)
   (cond ((or (= n 1) (= n level)) 1)
