@@ -19,4 +19,5 @@
     (sqrt-iter (improve guess x) x)
   )
 )
-(sqrt-iter 1 2)
+
+(display (sqrt-iter 1 2))
