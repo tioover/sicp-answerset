@@ -1,5 +1,6 @@
 #lang r5rs
-(define tolerance 0.000000000000000001)
+(#%provide (all-defined))
+(define tolerance 0.00001)
 (define (fixed-point f first-guess)
   (define (close-enough? v1 v2) (< (abs (- v1 v2) ) tolerance))
   (define (try guess)
