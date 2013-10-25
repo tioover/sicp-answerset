@@ -1,4 +1,4 @@
-#lang racket
+#lang r5rs
 
 (define (recu_f n)
   (cond ((< n 3) n)

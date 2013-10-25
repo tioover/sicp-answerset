@@ -1,4 +1,4 @@
-#lang racket
+#lang r5rs
 
 (if #f (display "a") (display "b")) ; 结果打印b 可以看出，内置的if 是正则序。
  

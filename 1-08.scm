@@ -1,4 +1,4 @@
-#lang racket
+#lang r5rs
 
 (define (good-enough? guess x)
   (<

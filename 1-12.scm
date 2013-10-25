@@ -1,4 +1,4 @@
-#lang racket
+#lang r5rs
 
 (define (pascal level n)
   (cond ((or (= n 1) (= n level)) 1)
