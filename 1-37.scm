@@ -20,10 +20,11 @@
   (frac (- k 1) end)
 )
 
+(define cont-frac cont-frac-iter)
 (define (d i) 1.0)
 (define n d)
 
-(define k 11)
+(define (test) (begin (define k 11)
 (display (+ 2 (cont-frac-iter n d k)))
 (newline)
-(display (+ 2 (cont-frac-recu n d k)))
+(display (+ 2 (cont-frac-recu n d k)))))

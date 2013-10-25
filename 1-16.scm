@@ -1,5 +1,4 @@
 #lang scheme
-
 (define (square x) (* x x))
 
 (define (fast-expt b n)
@@ -8,4 +7,4 @@
       ((= n 1) (* a b))
       ((even? n) (expt (square b) (/ n 2) a))
       (else (expt b (- n 1) (* a b)))))
-  (expt b n 1
+  (expt b n 1))
