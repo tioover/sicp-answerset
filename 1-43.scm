@@ -1,4 +1,10 @@
 #lang r5rs
 (define (square x) (* x x))
 (define (compose f g) (lambda (x) (f (g x))))
-(define (repeated f n) (if (= n 1) f (compose f (repeated f (- n 1)))))
+(define (repeated f n)
+  (define (repeated-recu f n) 
+    (if (= n 1) f (compose f (repeated f (- n 1)))))
+  (define (repeated-iter g m) 
+    (if (= m n) g (repeated-iter (compose f g) (+ m 1))))
+  (repeated-iter f 1))
+(define (inc x) (+ x 1))
