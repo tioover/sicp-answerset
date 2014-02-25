@@ -1,4 +1,4 @@
-SICP Answerset
+SICP Answer Set
 ==============
 
 Solutions to the exercises in *SICP*.
