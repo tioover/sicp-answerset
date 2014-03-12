@@ -9,13 +9,6 @@
         (reverse-iter (cdr items) (cons (car items) reversed))))
   (reverse-iter items nil))
 
-
-(define (deep-reverse tree)
-  (map
-   (lambda (item)
-     (if (pair? item) (deep-reverse item) item))
-   (reverse tree)))
-
 (define (list-link a b)
   (define (list-link-iter a b)
     (if (null? a) b (list-link-iter (cdr a) (cons (car a) b))))
@@ -28,3 +21,4 @@
            (fringe-iter (cdr tree) (list-link (fringe (car tree)) items)))
           (else (fringe-iter (cdr tree) (cons (car tree) items)))))
   (fringe-iter (reverse tree) nil))
+  
